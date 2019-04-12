@@ -14,6 +14,9 @@ import {runtime} from "./utils/Runtime";
 import {NavigationActions} from "react-navigation";
 import {connect} from "react-redux";
 import X5Shortcut from "./comps/X5Shortcut";
+import Greetings from "./comps/GreetingComp";
+import Blink from "./comps/Blink";
+import AppNotification from "./comps/AppNotification";
 
 class Root extends Component<any> {
     componentWillMount(): void {
@@ -40,6 +43,10 @@ class Root extends Component<any> {
                 <ImageComp/>
                 <NativeWebview/>
                 <X5Shortcut/>
+                <AppNotification/>
+                <NativeWebview/>
+                <Greetings/>
+                <Blink/>
             </View>
         );
     }
