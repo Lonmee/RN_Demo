@@ -144,6 +144,7 @@ dependencies {
     implementation 'com.facebook.react:react-native:+'
     // From node_modules
     implementation files('lib/tbs_sdk_thirdapp_v4.3.0.1020_43633_sharewithdownload_withoutGame_obfs_20190111_105200.jar')
+    implementation files('lib/MiPush_SDK_Client_3_6_9.jar')
 }
 
 // Run this once to be able to run the application with BUCK

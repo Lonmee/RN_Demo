@@ -17,6 +17,7 @@ import X5Shortcut from "./comps/X5Shortcut";
 import Greetings from "./comps/GreetingComp";
 import Blink from "./comps/Blink";
 import AppNotification from "./comps/AppNotification";
+import {X5Starter} from "./comps/X5Starter";
 
 class Root extends Component<any> {
     componentWillMount(): void {
@@ -41,7 +42,7 @@ class Root extends Component<any> {
             <View>
                 <Counter/>
                 <ImageComp/>
-                <NativeWebview/>
+                <X5Starter/>
                 <X5Shortcut/>
                 <AppNotification/>
                 <NativeWebview/>

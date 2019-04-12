@@ -2,6 +2,9 @@ package com.demo;
 
 import android.app.Application;
 
+import com.demo.utils.notification.DBNotificationPackage;
+import com.demo.utils.rnx5.X5ReactPackage;
+import com.demo.utils.toast.CustomToastPackage;
 import com.facebook.react.ReactApplication;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 import com.facebook.react.ReactNativeHost;
@@ -24,7 +27,10 @@ public class MainApplication extends Application implements ReactApplication {
         protected List<ReactPackage> getPackages() {
             return Arrays.<ReactPackage>asList(
                     new MainReactPackage(),
-                    new RNGestureHandlerPackage()
+                    new RNGestureHandlerPackage(),
+                    new X5ReactPackage(),
+                    new DBNotificationPackage(),
+                    new CustomToastPackage()
             );
         }
 
