@@ -39,8 +39,8 @@
                 <category android:name="android.intent.category.BROWSABLE" />
                 <!-- Accepts URIs that begin with "http://www.example.com/gizmos” -->
                 <data
-                    android:host="LM"
-                    android:pathPrefix="/RN"
+                    android:host="lm"
+                    android:pathPrefix="/rn"
                     android:scheme="demo" />
                 <!-- note that the leading "/" is required for pathPrefix-->
                 <!--<a href="[scheme]://[host]/[path]?[query]">启动应用程序</a>-->

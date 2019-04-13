@@ -1,6 +1,7 @@
 package com.demo.utils.rnx5.x5;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.graphics.PixelFormat;
@@ -15,9 +16,8 @@ import com.demo.R;
 import com.demo.utils.rnx5.X5Module;
 import com.demo.utils.rnx5.x5.core.X5JSFun;
 import com.demo.utils.rnx5.x5.core.X5WebView;
-import com.facebook.react.ReactActivity;
 
-public class X5Activity extends ReactActivity {
+public class X5Activity extends Activity {
 
     protected ViewGroup x5Frame;
     protected X5WebView x5wv;
@@ -59,10 +59,12 @@ public class X5Activity extends ReactActivity {
     private void checkTokenWithUrl(int sId, String sName) {
         if (curUrl.equals("")) {
             curSid = sId;
-            x5wv.loadUrl(curUrl = "http://172.16.137.81/yunyun-story-player/bin/game/index.html?storyId=2379&c=58&debug=true");
+            x5wv.loadUrl(curUrl = sName);
+            Log.i("open url:''", curUrl);
         } else if (curSid != sId) {
             curSid = sId;
-            x5wv.loadUrl(curUrl = "http://172.16.137.81/yunyun-story-player/bin/game/index.html?storyId=2379&c=58&debug=true");
+            x5wv.loadUrl(curUrl = sName);
+            Log.i("open", curUrl);
         }
     }
 

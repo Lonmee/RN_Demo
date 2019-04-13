@@ -19,7 +19,11 @@ import Blink from "./comps/Blink";
 import AppNotification from "./comps/AppNotification";
 import {X5Starter} from "./comps/X5Starter";
 
-class Root extends Component<any> {
+class Root extends Component<{ navigation, nav, back }, any> {
+    componentWillUnmount(): void {
+        console.log("Root componentWillUnmount");
+    }
+
     componentWillMount(): void {
         //缓存路由运行时
         runtime.navigation = this.props.navigation;

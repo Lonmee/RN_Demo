@@ -1,8 +1,8 @@
 import * as React from "react";
 import {Component} from "react";
 import {Platform, StyleSheet, Text, TouchableHighlight, View} from "react-native";
-import {RNX5} from "../../utils/NativeAPI";
 import {connect} from "react-redux";
+import {RNX5} from "../utils/NativeAPI";
 
 export class X5Starter extends Component {
 
@@ -48,7 +48,7 @@ export class X5Starter extends Component {
         function f(props, sId) {
             Platform.OS == "ios" ?
                 props.navigation.navigate('Web', "http://172.16.137.81/yunyun-story-player/bin/game/index.html?storyId=2379&c=58&debug=true") :
-                RNX5.activeX5(sId, sId.toString());
+                RNX5.activeX5(sId, "http://172.16.137.78/yunyun-story-player/bin/game/index.html?storyId=2379&c=58&debug=true");
         }
     }
 }

@@ -1,7 +1,7 @@
 import * as React from "react";
 import {Component} from "react";
 import {Platform, StyleSheet, Text, TouchableHighlight, View} from "react-native";
-import {RNCreateShortcut} from "./NativeAPI";
+import {RNCreateShortcut} from "../utils/NativeAPI";
 
 export default class X5Shortcut extends Component {
 

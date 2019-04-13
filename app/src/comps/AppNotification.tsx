@@ -1,11 +1,11 @@
 import * as React from "react";
 import {Component} from "react";
 import {AppState, NativeEventEmitter, Platform, StyleSheet, Text, TouchableHighlight, View} from "react-native";
-import {RNNotification} from "./NativeAPI";
+import {RNNotification} from "../utils/NativeAPI";
 
 export default class AppNotification extends Component {
-    constructor(props: {}, context: any) {
-        super(props, context);
+    constructor(props: {}) {
+        super(props);
     }
 
     componentWillMount(): void {
